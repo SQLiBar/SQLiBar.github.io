@@ -1,1 +1,171 @@
-Tools Under Development :)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Web Tools</title>
+
+<style>
+/* iOS Dark Theme Base */
+:root {
+    --bg-primary: #000000;
+    --bg-secondary: rgba(28, 28, 30, 0.75);
+    --card-bg: rgba(44, 44, 46, 0.6);
+    --text-primary: #ffffff;
+    --text-secondary: #98989d;
+    --accent: #0a84ff;
+    --blur: blur(20px);
+    --radius: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    backdrop-filter: var(--blur);
+    background: var(--bg-secondary);
+    position: sticky;
+    top: 0;
+}
+
+/* Container */
+.container {
+    padding: 20px;
+    flex: 1;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+/* Card */
+.card {
+    background: var(--card-bg);
+    backdrop-filter: var(--blur);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: 16px;
+    transition: transform 0.2s ease, background 0.2s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    background: rgba(60, 60, 67, 0.7);
+}
+
+/* Tool Name */
+.tool-name {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Status Badge */
+.badge {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 12px;
+    background: rgba(255, 149, 0, 0.15);
+    color: #ff9f0a;
+}
+
+/* Button */
+.button {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 14px;
+    border: none;
+    background: var(--accent);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.button:active {
+    opacity: 0.7;
+}
+
+/* Footer */
+footer {
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    Web Tools
+</header>
+
+<div class="container">
+
+    <div class="section-title">Tools Under Development</div>
+
+    <div class="card" onclick="notifyDev('Reverse IP')">
+        <div class="tool-name">Reverse IP</div>
+        <div class="badge">Under Development</div>
+    </div>
+
+    <div class="card" onclick="notifyDev('SQLi Scanner')">
+        <div class="tool-name">SQLi Scanner</div>
+        <div class="badge">Under Development</div>
+    </div>
+
+    <div class="card" onclick="notifyDev('Password Manager')">
+        <div class="tool-name">Password Generator</div>
+        <div class="badge">Under Development</div>
+    </div>
+
+    <button class="button" onclick="showAlert()">Get Notified</button>
+
+</div>
+
+<footer>
+    © 2026 Web Tools — SQLiBar
+</footer>
+
+<script>
+function notifyDev(toolName) {
+    alert(toolName + " is currently under development.");
+}
+
+function showAlert() {
+    alert("Notification feature coming soon.");
+}
+</script>
+
+</body>
+</html>
