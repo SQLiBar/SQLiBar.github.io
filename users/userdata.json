@@ -8,19 +8,19 @@
     {
         "device_id": "a9619c05fd4996f3",
         "key": "1234",
-        "expirydate": "11-04-2026",
+        "expirydate": "11-04-2027",
         "Allowoffline": true
     },
     {
         "device_id": "2809b870d6237aad",
         "key": "1234",
-        "expirydate": "11-04-2026",
+        "expirydate": "11-04-2027",
         "Allowoffline": true
     },
     {
         "device_id": "0eeac9613b47a7fe",
         "key": "devil",
-        "expirydate": "15-06-2026",
+        "expirydate": "15-06-2027",
         "Allowoffline": true
     }
 ]
